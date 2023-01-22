@@ -48,8 +48,13 @@ def question7():
     return render_template('question7.html')
 
 
+@app.route('/choose')
+def choose():
+    return render_template('choose.html')
+
+
 @app.route('/quiz1')
-def question8():
+def quiz1():
     return render_template('quiz1.html')
 
 
