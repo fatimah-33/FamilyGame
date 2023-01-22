@@ -47,9 +47,10 @@ def question6():
 def question7():
     return render_template('question7.html')
 
-@app.route('/question8')
+
+@app.route('/quiz1')
 def question8():
-    return render_template('question8.html')
+    return render_template('quiz1.html')
 
 
 if __name__ == '__main__':

@@ -155,24 +155,23 @@
                     </div>
                     <div class="col-sm-6 col-md-12 col-lg-12 row frame-answer">
                         <div class="col-lg-1 point">40</div>
-                        <div class="col-lg-11 answer">سورة </div>
+                        <div class="col-lg-11 answer">ملاعق</div>
                     </div>
                     <div class="col-sm-6 col-md-12 col-lg-12 row frame-answer">
                         <div class="col-lg-1 point">30</div>
-                        <div class="col-lg-11 answer"> سورة محمد</div>
+                        <div class="col-lg-11 answer">مبشرة</div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-1" style="margin-top: 80px;">
                 <div class="d-flex flex-column bd-highlight ">
-                    <div class="p-2 bd-highlight"><button id="question1" class="number-page">1</button></div>
-                    <div class="p-2 bd-highlight"><button id="question2" class="number-page">2</button></div>
-                    <div class="p-2 bd-highlight"><button id="question3" class="number-page">3</button></div>
-                    <div class="p-2 bd-highlight"><button id="question4" class="number-page">4</button></div>
-                    <div class="p-2 bd-highlight"><button id="question5" class="number-page">5</button></div>
-                    <div class="p-2 bd-highlight"><button id="question6" class="number-page">6</button></div>
-                    <div class="p-2 bd-highlight"><button id="question7" class="number-page">7</button></div>
-                    <div class="p-2 bd-highlight"><button id="question8" class="number-page">8</button></div>
+                    <div class="p-2 bd-highlight"><button id="quiz1" class="number-page">1</button></div>
+                    <div class="p-2 bd-highlight"><button id="quiz2" class="number-page">2</button></div>
+                    <div class="p-2 bd-highlight"><button id="quiz3" class="number-page">3</button></div>
+                    <div class="p-2 bd-highlight"><button id="quiz4" class="number-page">4</button></div>
+                    <div class="p-2 bd-highlight"><button id="quiz5" class="number-page">5</button></div>
+                    <div class="p-2 bd-highlight"><button id="quiz6" class="number-page">6</button></div>
+
 
                 </div>
             </div>
@@ -270,30 +269,25 @@
         document.querySelector('.count-points').innerText = plusNumber + five;
     }
 
-    document.querySelector("#question1").onclick = function () {
-        location.href = "{{ url_for('question1')}}";
+    document.querySelector("#quiz1").onclick = function () {
+        location.href = "{{ url_for('quiz1')}}";
     };
-    document.querySelector("#question2").onclick = function () {
-        location.href = "{{ url_for('question2')}}";
+    document.querySelector("#quiz2").onclick = function () {
+        location.href = "{{ url_for('quiz2')}}";
     };
-    document.querySelector("#question3").onclick = function () {
-        location.href = "{{ url_for('question3')}}";
+    document.querySelector("#quiz3").onclick = function () {
+        location.href = "{{ url_for('quiz3')}}";
     };
-    document.querySelector("#question4").onclick = function () {
-        location.href = "{{ url_for('question4')}}";
+    document.querySelector("#quiz4").onclick = function () {
+        location.href = "{{ url_for('quiz4')}}";
     };
-    document.querySelector("#question5").onclick = function () {
-        location.href = "{{ url_for('question5')}}";
+    document.querySelector("#quiz5").onclick = function () {
+        location.href = "{{ url_for('quiz5')}}";
     };
-    document.querySelector("#question6").onclick = function () {
-        location.href = "{{ url_for('question6')}}";
+    document.querySelector("#quiz6").onclick = function () {
+        location.href = "{{ url_for('quiz6')}}";
     };
-    document.querySelector("#question7").onclick = function () {
-        location.href = "{{ url_for('question7')}}";
-    };
-    document.querySelector("#question8").onclick = function () {
-        location.href = "{{ url_for('question8')}}";
-    };
+
 </script>
 
 </html>

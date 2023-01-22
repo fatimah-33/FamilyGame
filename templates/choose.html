@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/all.min.css') }}">
+    <title>Family Game</title>
+    <style>
+        body {
+            background-color: rgb(204, 204, 235);
+            background-repeat: no-repeat;
+            background-image: url('static/img/bg.jpeg')
+        }
+
+        .container {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 80px;
+            font-weight: bold;
+            margin-top: 200px;
+            color: rgb(89, 89, 146);
+
+        }
+
+        .number-page {
+            color: white;
+            background-color: rgb(46, 46, 114);
+        }
+
+        .start {
+            background-color: rgb(46, 46, 114);
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            border: solid 2px black;
+            border-radius: 50px;
+            width: 200px;
+
+        }
+
+        .start:hover {
+            cursor: pointer;
+            background-color: rgb(89, 89, 146);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 bg-theme">
+
+                <div class="col-lg-12" style="text-align: center;">
+                    <button class="btn btn-brimary start" id="start1">اسئلة قران</button>
+                </div>
+                <div class="col-lg-12" style="text-align: center;">
+                    <button class="btn btn-brimary start" id="start2">اسئلة أدوات</button>
+                </div>
+            </div>
+        </div>
+</body>
+<script type="text/javascript" src="/static/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+<script>
+    document.querySelector("#start1").onclick = function () {
+        location.href = "{{ url_for('question1')}}";
+    };
+    document.querySelector("#start2").onclick = function () {
+        location.href = "{{ url_for('quiz1')}}";
+    };
+</script>
+
+</html>
