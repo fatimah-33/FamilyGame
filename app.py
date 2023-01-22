@@ -47,6 +47,10 @@ def question6():
 def question7():
     return render_template('question7.html')
 
+@app.route('/question8')
+def question8():
+    return render_template('question8.html')
+
 
 if __name__ == '__main__':
     app.run(DEBUG=True)
